@@ -1,0 +1,61 @@
+@media screen and (min-width: 500px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    header {
+        text-align: center;
+        background-color: rgb(190, 49, 49);
+        color: white;
+        padding: 10px;
+    }
+    
+    main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    section {
+        background-color: #ecf0f1;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section.data {
+        width: 150px;
+        position: absolute;
+        top: 10%;
+        left: 0;
+    }
+    
+    section.weather {
+        width: 150px;
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-icon-small {
+        display: inline-block;
+        width: 40px;
+    }
+    
+    footer {
+        background-color: rgb(190, 49, 49);
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
