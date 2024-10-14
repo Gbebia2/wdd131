@@ -1,19 +1,4 @@
 @media screen and (min-width: 500px) {
-    body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-        line-height: 1.6;
-    }
-    
-    header {
-        text-align: center;
-        background-color: rgb(190, 49, 49);
-        color: white;
-        padding: 10px;
-    }
     
     main {
         max-width: 1200px;
@@ -42,13 +27,14 @@
         right: 0;
     }
 
+    .weather h2::after {
+        content: "🌤️";
+        margin-left: 10px;
+    }
+    
+
     .weather-icon {
         display: none;
-    }
-
-    .weather-icon-small {
-        display: inline-block;
-        width: 40px;
     }
     
     footer {
