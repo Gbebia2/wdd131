@@ -32,7 +32,6 @@ const products = [
     }
 ];
 
-// Populate the product select element
 const selectElement = document.getElementById('product');
 products.forEach(product => {
     const option = document.createElement('option');
@@ -41,16 +40,13 @@ products.forEach(product => {
     selectElement.appendChild(option);
 });
 
-// Display the review count on the "Review Submitted" page
 document.addEventListener('DOMContentLoaded', function () {
-    // Increment review count
     if (localStorage.getItem('reviewCount')) {
         localStorage.setItem('reviewCount', parseInt(localStorage.getItem('reviewCount')) + 1);
     } else {
         localStorage.setItem('reviewCount', 1);
     }
 
-    // Display the review count
     const reviewCountElement = document.getElementById('review-count');
     if (reviewCountElement) {
         reviewCountElement.textContent = localStorage.getItem('reviewCount');
