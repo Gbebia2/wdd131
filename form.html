@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A product review form page.">
+    <meta name="author" content="Great Bebia">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Product Review</title>
+</head>
+<body>
+    <header>
+        Product Review
+    </header>
+
+    <form action="review.html" method="get">
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="">Select a Product...</option>
+            </select>
+
+        <label>Overall Rating</label>
+        <div class="stars">
+            <label>☆<input type="radio" id="star1" name="rating" value="1" required></label>
+            <label>☆☆<input type="radio" id="star2" name="rating" value="2"></label>
+            <label>☆☆☆<input type="radio" id="star3" name="rating" value="3"></label>     
+            <label>☆☆☆☆<input type="radio" id="star4" name="rating" value="4"></label>
+            <label>☆☆☆☆☆<input type="radio" id="star5" name="rating" value="5"></label>            
+        </div>
+
+        <label>Date of Installation</label>
+        <div class="date">
+        <input type="date" id="installation-date" name="installation-date" required>
+        </div>
+
+        <label>Which features did you find useful in the product? <i>(Check all that apply)</i></label>
+        <div>
+            <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+            <label><input type="checkbox" id="ease-of-use" name="ease-of-use" value="yes"> Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+            <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+        </div>
+
+        <label>Written Review</label>
+        <textarea id="review" name="review"></textarea>
+
+        <label>Your Name</label>
+        <input type="text" id="username" name="username">
+
+        <input type="submit" value="Submit Review">
+
+    </form>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Great Okie Bebia. Nigeria/Lagos.</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+</body>
+</html>
